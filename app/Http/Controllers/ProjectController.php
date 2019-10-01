@@ -39,8 +39,9 @@ class ProjectController extends Controller
              "</td><td>".$row["start_date"].
              "</td><td>".$row["finish_date"].
              "</td><td>".$row["year_income"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
