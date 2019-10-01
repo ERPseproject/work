@@ -37,8 +37,9 @@ class UsersController extends Controller
              "</td><td>".$row["created_at"].
              "</td><td>".$row["updated_at"].
              "</td><td>".$row["avatar"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
