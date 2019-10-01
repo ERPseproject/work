@@ -26,8 +26,9 @@ class BillController extends Controller
              "</td><td>".$row["date"].
              "</td><td>".$row["amount"].
              "</td><td>".$row["year_income"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
