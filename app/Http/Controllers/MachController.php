@@ -34,8 +34,9 @@ class MachController extends Controller
              "</td><td>".$row["supervisor"].
              "</td><td>".$row["sell_date"].
              "</td><td>".$row["Img"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
