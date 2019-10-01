@@ -32,8 +32,9 @@ class HrController extends Controller
              "</td><td>".$row["Address"].
              "</td><td>".$row["pass"].
              "</td><td>".$row["provider_id"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
