@@ -22,8 +22,9 @@ class RoomController extends Controller
              "<tr><td>".$row["idroom"].
              "</td><td>".$row["No"].
              "</td><td>".$row["building"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
