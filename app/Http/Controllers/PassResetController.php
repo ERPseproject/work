@@ -22,8 +22,9 @@ class PassResetController extends Controller
              "<tr><td>".$row["email"].
              "</td><td>".$row["token"].
              "</td><td>".$row["created_at"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
