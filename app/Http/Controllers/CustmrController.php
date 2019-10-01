@@ -26,10 +26,13 @@ class CustmrController extends Controller
              "</td><td>".$row["address"].
              "</td><td>".$row["tax_id"].
              "</td><td>".$row["status"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      
+      echo "</table>";
       $conn -> close();
     }
+    
   }
 
 }
