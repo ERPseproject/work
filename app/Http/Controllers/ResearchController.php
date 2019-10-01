@@ -32,8 +32,9 @@ class ResearchController extends Controller
              "</td><td>".$row["no"].
              "</td><td>".$row["page"].
              "</td><td>".$row["img"].
-             "</td></tr></table>";
+             "</td></tr>";
       }
+      echo "</table>";
       $conn -> close();
     }
   }
